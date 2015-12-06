@@ -70,13 +70,15 @@
 							<h3 style="border-bottom: 1px solid black" class="text-center">Your Food Items</h3>
 							<div class="foodsList">
 								<ul id="user-list" class="user-list"></ul>
-							</div>
-							<script id="foodsListTemplate" type="text/template">
-								<span class="searchName"><%= title %></span> <span class="searchCal"><%= calorie %> Cal.</span>
+								<script id="foodsListTemplate" type="text/template">
+								<span class="searchName"><%= title %></span> <span class="searchCal"><%= calories %> Cal.</span>
 								<span class="delete">Delete</span>
 							</script>
+							</div>
+							
 							<br>
-							<h5>Total Calories: <span id="total-cal">0</span></h5>
+							<h5>Total Calories: <span id="total">0</span></h5>
+							<h5>Total Items: <span id="totalNum">0</span></h5>
 							<br>
 						</div>
 					</div>
@@ -85,6 +87,7 @@
 				<div class="col-md-3">
 					<div class="spacer">
 						<div class="" style="border: 1px solid black; padding: 10px;">
+						<div id="addFood">
 							<h3 class="text-center">Select Food</h3><br>
 							<h4 class="text-center">Food Name</h4>
 							<p class="text-center" id="FoodName"></p>
@@ -92,9 +95,9 @@
 							<p class="text-center" id="FoodCal"></p>
 							
 							<center>
-								<button id="foodSubmit" disabled>Add Item</button>
+								<button id="foodSubmit" class="foodSubmitBtn" disabled>Add Item</button>
 							</center>
-							
+						</div>	
 						</div>
 					</div>
 				</div>
