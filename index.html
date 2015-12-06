@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Health Tracker</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	<body>
+	
+		<div class="container-fluid">
+		
+			<!-- Top Bar -->
+			<div class="row" style="border-bottom: 1px solid black;">
+				<div class="col-md-2">
+					<img src="" class=""/>
+				</div>
+				
+				<div class="col-md-8">
+					<h4 class="text-center">Health Tracker</h4>
+				</div>
+				
+				<div class="col-md-2">
+					<ul class="top-list">
+						<li>Home</li>
+						<li>About Me</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- Header/Intro Section -->
+			<div class="row header" style="border-bottom: 1px solid black; margin: 0 0 20px 0; padding: 20px;">
+				<div class="col-md-8">
+					<div class="cool-box">
+						<h1 class="text-center">Nutrition Is Important!</h1>
+						<h4 class="text-center">Remeber to eat healthy! <i>An apple a day keeps the doctor away!</i></h4>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div style="width: 90%; margin: auto;">
+						<center><img src="http://kidshealth.org/kid/stay_healthy/food/headers_98285/P_PyramidPlate.png" class="nu-pic"/></center>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Main Section -->
+			<div class="row" style="margin-bottom: 20px;">
+			
+				<div class="col-md-3">
+					<div class="spacer">
+						<div class="search-div" style="border: 1px solid black; padding: 10px;">
+							<h3 style="border-bottom: 1px solid black" class="text-center">Search a Food!</h3>
+							<h5 id="results-text" class="text-center"></h5><br>
+							<center>
+								<form id="search-form">
+									<input type="text" placeholder="Search a food!" class="search-input" id="searchField" value="">
+									<input id="searchBtn" type="button" value="Submit">
+									<button id="info" type="button" onclick="Info()">?</button>
+								</form>
+							</center>
+							<br>
+						</div>
+						<br><br>
+						
+						<div class="selection-div" style="border: 1px solid black; padding: 10px;">
+							<h3 style="border-bottom: 1px solid black" class="text-center">Your Food Items</h3>
+							<div>
+								<form>
+									<ul id="user-list" class="user-list"></ul>
+								</form>
+							</div>
+							<br>
+							<h5>Total Calories: <span id="total-cal">0</span></h5>
+							<br>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="spacer">
+						<div class="" style="border: 1px solid black; padding: 10px;">
+							<h3 class="text-center">Select Food</h3><br>
+							<h4 class="text-center">Food Name</h4>
+							<p class="text-center" id="FoodName"></p>
+							<h4 class="text-center">Food Calories</h4>
+							<p class="text-center" id="FoodCal"></p>
+							
+							<center>
+								<button id="foodSubmit" disabled>Add Item</button>
+							</center>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="spacer">
+						<div class="results-div" id="results-div" style="border: 1px solid black; padding: 10px;">
+							<h3 style="border-bottom: 1px solid black" id="indicate" class="text-center">List of Results</h3>
+							<div class="results-list-div">
+								<ul class="results-list" id="results-list"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!-- Footer -->
+			<div class="row" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+				<div class="col-md-12">
+					<h4 class="text-center">Thanks for coming! And always stay healthy!</h4>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- Scripts -->
+		<script src="js/jQuery.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/backbone.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js"></script>
+		<script src="js/script.js"></script>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,94 @@
+body {
+	height: 99vh;
+}
+
+.top-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.top-list li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+}
+
+.spacer {
+	width: 100%;
+	margin: auto;
+}
+
+.selection-div {
+	width: 100%;
+	margin: auto;
+}
+
+.search-div {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.results-div {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.header {
+	background-image: url('http://thinkslimmer.files.wordpress.com/2013/02/284384.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	width: 100%;
+}
+
+.nu-pic {
+	width: 70%;
+}
+
+.cool-box {
+	color: white;
+	background-color: black;
+	opacity: 0.8;
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+}
+
+.results-list {
+	margin: 0;
+	padding: 0;
+}
+
+.results-list li {
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+
+.results-list li .food-list {
+	margin: 0;
+	padding: 0;
+}
+
+.results-list li .food-list li {
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid white;
+}
+
+.results-list-div {
+	width: 95%;
+	margin: auto;
+}
+
+@media (max-width: 992px) {
+	.selection-div {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 60px;
+}
+}
+
+
