@@ -14,35 +14,37 @@
 		<div class="container-fluid">
 		
 			<!-- Top Bar -->
-			<div class="row" style="border-bottom: 1px solid black;">
-				<div class="col-md-2">
+			<div class="row closing" style="border-bottom: 1px solid black;">
+				<div class="col-md-4">
 					<img src="" class=""/>
 				</div>
 				
-				<div class="col-md-8">
+				<div class="col-md-4">
 					<h4 class="text-center">Health Tracker</h4>
 				</div>
 				
-				<div class="col-md-2">
+				<div class="col-md-4">
 					<ul class="top-list">
-						<li>Home</li>
-						<li>About Me</li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="http://www.nutritionix.com/">Nutritionix</a></li>
+						<li><a href="http://rath.asia/demo/udacity/frontend-nanodegree-health-tracker/">Other User's Example</a></li>
+						<li><a href="https://github.com/ryanwaite28">GitHub</a></li>
 					</ul>
 				</div>
 			</div>
 			
 			<!-- Header/Intro Section -->
 			<div class="row header" style="border-bottom: 1px solid black; margin: 0 0 20px 0; padding: 20px;">
-				<div class="col-md-8">
+				<div class="col-md-8"><br><br>
 					<div class="cool-box">
-						<h1 class="text-center">Nutrition Is Important!</h1>
-						<h4 class="text-center">Remeber to eat healthy! <i>An apple a day keeps the doctor away!</i></h4>
+						<h1 class="text-center text-shadow">Nutrition Is Important!</h1>
+						<h4 class="text-center text-shadow">Remeber to eat healthy! <i>An apple a day keeps the doctor away!</i></h4><br><br>
 					</div>
 				</div>
 				
 				<div class="col-md-4">
 					<div style="width: 90%; margin: auto;">
-						<center><img src="http://kidshealth.org/kid/stay_healthy/food/headers_98285/P_PyramidPlate.png" class="nu-pic"/></center>
+						<center><img src="http://fruitguys.com/sites/default/files/almanac/wp-content/uploads/2011/07/pyramid-food-guide-921.png" class="nu-pic"/></center>
 					</div>
 				</div>
 			</div>
@@ -52,8 +54,8 @@
 			
 				<div class="col-md-3">
 					<div class="spacer">
-						<div class="search-div" style="border: 1px solid black; padding: 10px;">
-							<h3 style="border-bottom: 1px solid black" class="text-center">Search a Food!</h3>
+						<div class="search-div box-shadow" style="border: 1px solid black; padding: 10px;">
+							<h3 style="border-bottom: 1px solid black" class="text-center text-shadow">Search a Food!</h3>
 							<h5 id="results-text" class="text-center"></h5><br>
 							<center>
 								<form id="search-form">
@@ -66,19 +68,18 @@
 						</div>
 						<br><br>
 						
-						<div class="selection-div" style="border: 1px solid black; padding: 10px;">
-							<h3 style="border-bottom: 1px solid black" class="text-center">Your Food Items</h3>
+						<div class="box-shadow selection-div" style="border: 1px solid black; padding: 10px;">
+							<h3 style="border-bottom: 1px solid black" class="text-center text-shadow">Your Food Items</h3>
 							<div class="foodsList">
 								<ul id="user-list" class="user-list"></ul>
 								<script id="foodsListTemplate" type="text/template">
-								<span class="searchName"><%= title %></span> <span class="searchCal"><%= calories %> Cal.</span>
-								<span class="delete">Delete</span>
+								<span class="searchName"><%= title %></span> <br> <span class="searchCal"><%= calories %> Cal.</span>
+								<span class="delete" style="float: right;">Delete</span>
 							</script>
 							</div>
 							
 							<br>
 							<h5>Total Calories: <span id="total">0</span></h5>
-							<h5>Total Items: <span id="totalNum">0</span></h5>
 							<br>
 						</div>
 					</div>
@@ -86,9 +87,9 @@
 				
 				<div class="col-md-3">
 					<div class="spacer">
-						<div class="" style="border: 1px solid black; padding: 10px;">
-						<div id="addFood">
-							<h3 class="text-center">Select Food</h3><br>
+						<div class="box-shadow" style="border: 1px solid black; padding: 10px; margin-bottom: 40px;">
+						<div id="addFood" class="">
+							<h3 class="text-center text-shadow">Selected Food</h3><br>
 							<h4 class="text-center">Food Name</h4>
 							<p class="text-center" id="FoodName"></p>
 							<h4 class="text-center">Food Calories</h4>
@@ -104,8 +105,8 @@
 				
 				<div class="col-md-6">
 					<div class="spacer">
-						<div class="results-div" id="results-div" style="border: 1px solid black; padding: 10px;">
-							<h3 style="border-bottom: 1px solid black" id="indicate" class="text-center">List of Results</h3>
+						<div class="box-shadow results-div" id="results-div" style="border: 1px solid black; padding: 10px;">
+							<h3 style="border-bottom: 1px solid black" id="indicate" class="text-center text-shadow">List of Results</h3>
 							<div class="results-list-div">
 								<ul class="results-list" id="results-list"></ul>
 							</div>
@@ -116,7 +117,7 @@
 			</div>
 			
 			<!-- Footer -->
-			<div class="row" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+			<div class="row closing" style="border-top: 1px solid black; border-bottom: 1px solid black;">
 				<div class="col-md-12">
 					<h4 class="text-center">Thanks for coming! And always stay healthy!</h4>
 				</div>
