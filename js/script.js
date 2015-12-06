@@ -192,7 +192,7 @@ var App = App || {};
 				type: 'GET',
 				dataType: 'json',
 				cache: true,
-				url: 'https://api.nutritionix.com/v1_1/search/' + keyword + '?results=0:5&fields=item_name,brand_name,item_id,nf_calories&appId=138d97a2&appKey=16dcfdb8ad18dd1af6382f5d2d0ea49d'
+				url: 'https://api.nutritionix.com/v1_1/search/' + keyword + '?results=0:10&fields=item_name,brand_name,item_id,nf_calories&appId=138d97a2&appKey=16dcfdb8ad18dd1af6382f5d2d0ea49d'
 				
 			}).done(function(data) {
 				console.log(data);
