@@ -210,7 +210,7 @@ var App = App || {};
 				
 				for(var i = 0; i < results.length; i++) {
 					var result = data.hits[i];
-					searchItemHTML += '<li class="searchItem">' + '<span class="searchName">' + result.fields.item_name + ', ' + result.fields.brand_name + '</span>' + '<span class="searchCal">' + result.fields.nf_calories + '</span>' + '</li>';
+					searchItemHTML += '<li class="searchItem">' + '<span class="searchName">' + result.fields.item_name + ', ' + result.fields.brand_name + '</span>' + '<br>' + '<span class="searchCal">' + result.fields.nf_calories + ' Cal. ' + '</span>' + '</li>';
 				}
 				
 				searchUL.html(searchItemHTML);
