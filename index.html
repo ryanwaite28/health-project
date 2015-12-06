@@ -68,11 +68,13 @@
 						
 						<div class="selection-div" style="border: 1px solid black; padding: 10px;">
 							<h3 style="border-bottom: 1px solid black" class="text-center">Your Food Items</h3>
-							<div>
-								<form>
-									<ul id="user-list" class="user-list"></ul>
-								</form>
+							<div class="foodsList">
+								<ul id="user-list" class="user-list"></ul>
 							</div>
+							<script id="foodsListTemplate" type="text/template">
+								<span class="searchName"><%= title %></span> <span class="searchCal"><%= calorie %> Cal.</span>
+								<span class="delete">Delete</span>
+							</script>
 							<br>
 							<h5>Total Calories: <span id="total-cal">0</span></h5>
 							<br>
