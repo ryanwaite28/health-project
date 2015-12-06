@@ -91,6 +91,10 @@ body {
 	transition: 0.3s;
 }
 
+.delete, .searchCal, #total {
+	font-weight: bold;
+}
+
 .results-list-div {
 	width: 95%;
 	margin: auto;
