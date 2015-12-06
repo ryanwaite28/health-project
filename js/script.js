@@ -70,7 +70,7 @@ var App = App || {};
 		
 		remove: function() {
 			if(this.$el.siblings().length === 0) {
-				$('').shoe();
+				$('').show();
 			}
 			this.$el.remove();
 		},
@@ -116,14 +116,14 @@ var App = App || {};
 		submit: function(e) {
 			e.preventDefault();
 			
-			var newFoodName = $('#foodName').text().toString();
-			var newFoodCal = parseInt($('#foodCal').text());
+			var newFoodName = $('#FoodName').text().toString();
+			var newFoodCal = parseInt($('#FoodCal').text());
 			
 			if(isNaN(newFoodCal)) {
 				return;
 			}
 			
-			var food = new App.Models.Food({title: newFoodName, calories: newFoodCalorie});
+			var food = new App.Models.Food({title: newFoodName, calories: newFoodCal}, {validate: true});
 			this.collection.add(food);
 			
 			food.save();
@@ -134,6 +134,7 @@ var App = App || {};
 	
 	App.Views.Total = Backbone.View.extend({
 		el: '#total',
+		ell: '#totalNum',
 		
 		initialize: function() {
 			this.render();
@@ -142,11 +143,17 @@ var App = App || {};
 		
 		render: function() {
 			var total = 0;
+			var totalNum = 0;
+			var listItems = $("#user-list").children();
+			var count = listItems.length;
 			
 			this.collection.each(function(elem) {
 				total += parseInt(elem.get('calories'));
-				
 			}, this);
+			
+			for(var i = 0; i < listItems; i++) {
+				totalNum++;
+			}
 			
 			this.$el.text(total);
 			
@@ -203,7 +210,7 @@ var App = App || {};
 				
 				for(var i = 0; i < results.length; i++) {
 					var result = data.hits[i];
-					searchItemHTML += '<li class="searchItem">' + '<span class="searchName">' + result.fields.item_name + ', ' + result.fields.brand_name + '</span>' + '<span class="searchCal">' + result.fields.nf_calories + '</span>' + '<li>';
+					searchItemHTML += '<li class="searchItem">' + '<span class="searchName">' + result.fields.item_name + ', ' + result.fields.brand_name + '</span>' + '<span class="searchCal">' + result.fields.nf_calories + '</span>' + '</li>';
 				}
 				
 				searchUL.html(searchItemHTML);
