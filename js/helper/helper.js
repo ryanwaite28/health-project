@@ -3,7 +3,7 @@ var App = App || {};
 
 (function () {
 	
-	window.App = {
+	window.App = { 
 		Models: {},
 		Collections: {},
 		Views: {},

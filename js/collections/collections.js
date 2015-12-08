@@ -3,7 +3,7 @@ var App = App || {};
 
 (function () {
 	
-	// Create Foods Collection
+	// Create Foods Collection 
 	App.Collections.Foods = Backbone.Collection.extend({
 		model: App.Models.Food,
 		// Implement localstorage

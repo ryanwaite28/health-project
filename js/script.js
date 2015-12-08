@@ -1,5 +1,5 @@
 // question alert
-function Info() {
+function Info() { 
 	alert("You can search literally, any. kind. of. food! Restaurants, Grocery Items, Ingridients, you name it! just type it in and hit search!");
 }
 

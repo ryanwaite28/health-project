@@ -1,7 +1,7 @@
 // for easy accessing
 var App = App || {};
 
-(function () {
+(function () { 
 	
 	// New Food View
 	App.Views.Food = Backbone.View.extend({

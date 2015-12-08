@@ -1,7 +1,7 @@
 // for easy accessing
 var App = App || {};
 
-(function () {
+(function () { 
 	
 	//New Food Item Model
 	App.Models.Food = Backbone.Model.extend({
