@@ -6,6 +6,8 @@ How to use:
  2. open the folder
  3. open the index.html file
  4. enjoy the web app
+ 
+ Search for foods with the search bar, see the results on the right, and add items to your selected list.
 ____________________
  
  studied the backbone.js from documentations online
