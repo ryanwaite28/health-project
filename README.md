@@ -1,5 +1,6 @@
 # health-tracker
 This web application can search foods and track the amount of calories from all the foods a user selects.
+http://ryanwaite28.github.io/health-project/
 
 How to use:
  1. Download zip or clone repository
